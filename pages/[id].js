@@ -30,9 +30,10 @@ const Home = ({data, header}) => {
                     </div>
                     <div className="flex flex-wrap -mx-1 lg:-mx-4 align-center justify-center">
                         {
-                            data.itemLists.map((content, i) => {
+                            data.itemLists !== null ? data.itemLists.map((content, i) => {
                                 return <Card key={content.id} content={content}/>
                             })
+                                : "No Data"
                         }
                     </div>
                 </div>
