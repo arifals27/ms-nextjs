@@ -157,14 +157,18 @@ const Post = ({data}) => {
                             <div className="font-bold text-cyan-500 w-24">Synopsis:</div>
                             <div itemProp={"description"}>{data.synopsis}</div>
                         </div>
-                        <div className="grid grid-flow-col grid-cols-2 text-center mt-10 gap-4">
-                            <Link href={`${path}/` + data.chapters[data.chapters.length - 1].chapter_slug}
-                                     className="border-solid border-red-600 rounded-3xl border py-2 hover:bg-red-500 hover:border-gray-300">Read
-                                First Chapter</Link>
-                            <Link href={`${path}/` + data.chapters[0].chapter_slug}
-                                     className="border-solid border-red-600 rounded-3xl border py-2 hover:bg-green-500 hover:border-gray-300">Read
-                                Last Chapter</Link>
-                        </div>
+                        {
+                            data.chapters !== null ? (
+                                <div className="grid grid-flow-col grid-cols-2 text-center mt-10 gap-4">
+                                    <Link href={`${path}/` + data.chapters[data.chapters.length - 1].chapter_slug}
+                                          className="border-solid border-red-600 rounded-3xl border py-2 hover:bg-red-500 hover:border-gray-300">Read
+                                        First Chapter</Link>
+                                    <Link href={`${path}/` + data.chapters[0].chapter_slug}
+                                          className="border-solid border-red-600 rounded-3xl border py-2 hover:bg-green-500 hover:border-gray-300">Read
+                                        Last Chapter</Link>
+                                </div>
+                            ) : ""
+                        }
                     </div>
                 </div>
 
@@ -190,7 +194,7 @@ const Post = ({data}) => {
                             </div>
                             <div id="chapter-list" className="flex flex-wrap mx-1 align-center justify-center" itemProp="hasPart" itemType="https://schema.org/PublicationVolume">
                                 {
-                                    typeof data.chapters == "object" ? data.chapters.map(chapter => {
+                                    data.chapters !== null ? data.chapters.map(chapter => {
                                         return (
                                             <div className="my-2 w-full md:w-1/2 lg:my-3 lg:w-1/3 shadow-black"
                                                  key={chapter.chapter_id} >
