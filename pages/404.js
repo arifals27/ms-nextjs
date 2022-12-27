@@ -12,12 +12,12 @@ const ErrPage = () => {
                     <div className="order-1 max-w-md px-2 text-sm md:text-base lg:px-0">
                         <header className="mb-6">
                             <h2 className="text-4xl font-bold leading-none text-gray-400 select-none lg:text-6xl">404.</h2>
-                            <h3 className="text-xl font-light leading-normal lg:text-3xl md:text-3xl">Sorry, we couldn't
+                            <h3 className="text-xl font-light leading-normal lg:text-3xl md:text-3xl">Sorry, we couldn&apos;t
                                 find this page.</h3>
                         </header>
 
                         <p className="max-w-sm mb-5 leading-5 md:leading-7">
-                            Don't worry, sometimes even we make mistakes.
+                            Don&apos;t worry, sometimes even we make mistakes.
                             You can find plenty of other things on our homepage.
                         </p>
 
@@ -32,11 +32,11 @@ const ErrPage = () => {
                              width="400">
                             <path
                                 d="M1073.3 1016.93c-43.75-72.44-119.63-96.48-144.56-103.2h0a121.1 121.1 0 01-6-58.67c5.65-38.81 14.87-101.89 15.77-106.5L750 821.89l-191.73 64.42c3.64 3 51.12 45.51 80.31 71.69a121.07 121.07 0 0133 48.89h0c-14.84 21.13-57.72 88.19-44.92 171.84 12.09 79 67.16 129 103.83 162.39a396.42 396.42 0 0088 60.44 121.54 121.54 0 0098.43 19.6c5.76-1.34 16.84-4.18 27.22-7.38 4.58-1.42 10.4-3.23 17.06-5.57v0l1.1-.41 1.1-.39h0c6.61-2.47 12.24-4.8 16.67-6.65 10-4.19 20.35-9.11 25.63-11.77a121.54 121.54 0 0063-78.09 396.28 396.28 0 0028.85-102.77c6.82-49.07 17.06-122.78-24.25-191.2z"
-                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#000"
+                                strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" stroke="#000"
                                 fill="#d6b49a"/>
                             <ellipse cx="748.2" cy="816.89" rx="202.22" ry="30.98"
-                                     transform="rotate(-19.91 748.327 816.983)" stroke-miterlimit="10" fill="#020202"
-                                     stroke-width="3" stroke="#000"/>
+                                     transform="rotate(-19.91 748.327 816.983)" strokeMiterlimit="10" fill="#020202"
+                                     strokeWidth="3" stroke="#000"/>
                             <path className="cls-3" fill={"#818181"}
                                   d="M959 1447l-.09 82.82c0 6.19 6.66 11.22 14.88 11.23h.3c8.22 0 14.9-5 14.9-11.2l.09-81.9c0-.53-6.95-1-15.39-1H959M1749 1447l-.09 82.82c0 6.19 6.66 11.22 14.88 11.23h.3c8.22 0 14.9-5 14.9-11.2l.09-81.9c0-.53-7-1-15.39-1H1749"/>
                             <path
@@ -65,7 +65,7 @@ const ErrPage = () => {
                                   d="M1379.5 855.5c-43.86-27.19-89.35-56.1-133.21-83.29-9.07-5.62-23.66 1.62-23.79 12.29-.27 22.81-4 48.1 3 83 3.77 18.84 5.45 28.58 9.26 41.5a315.06 315.06 0 0019.74 50.5 199 199 0 0118-29c5.75-7.71 26.56-34.42 64-56a221.93 221.93 0 0143-19z"/>
                             <path
                                 d="M1222.5 782.5s75.38 65.94 84.71 83.21c.55 1 2.89 5.62 1.16 7.71-3.3 4-17.41-6.08-23.87-.92a6.77 6.77 0 00-1.62 1.92 8 8 0 00.75 8.68c2.16 2.87 5 7.47 4.73 11.84a6.33 6.33 0 01-1.15 3.63c-1.93 2.36-5.52 2.38-6.51 2.38-6.55 0-10.09-6.31-10.25-6.6a4.65 4.65 0 00-6 .13 3.51 3.51 0 00-.94 2 8.85 8.85 0 00.82 5.06c2.17 4.39-.37 18.55-1.85 24.93a93.65 93.65 0 01-11 27c-9-19.66-21.15-51-27-89a326.82 326.82 0 01-3.49-62.74c.38-7.83 1.01-14.43 1.51-19.23z"
-                                fill="#f3d2c9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                                fill="#f3d2c9" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
                                 stroke="#000"/>
                             <circle className="cls-12" cx="1355" cy="991" r="22.5"/>
                             <circle className="cls-9" cx="1557" cy="991" r="31.5"  fill="#f3d2c9" stroke="#000" strokeMiterlimit="10"/>
@@ -84,8 +84,8 @@ const ErrPage = () => {
                                   d="M1479.5 1367.5l34 76a192.85 192.85 0 01-51-1s-29.19-3.39-48.59-18c-13.48-10.12-14.12-17.25-14.29-19.38-.78-9.74 5.64-16.63 8.13-19l.75-.68c9-7.86 25-8.93 26-9 10.24-.63 24.39-3.28 45-8.94z"/>
                             <path
                                 d="M1173.28 1285.23l30.22-89.73a156.61 156.61 0 00-60 11 149.83 149.83 0 00-38 23c-1 .85-15 12.88-15.5 24.47v1.26c.23 9.77 7.33 16 10.06 18l.82.6c8.37 5.92 18.58 5.26 33.63 5.63 8.49.21 12.73.32 18 1a113.17 113.17 0 0120.77 4.77z"
-                                fill="#333" stroke="#191818" stroke-width="3" stroke-linecap="round"
-                                stroke-linejoin="round"/>
+                                fill="#333" stroke="#191818" strokeWidth="3" strokeLinecap="round"
+                                strokeLinejoin="round"/>
                             <path className="cls-17"
                                   d="M292.3 344.49l-28.05-15.3a40.34 40.34 0 01-20.8-39.64l2.35-22.21a61.8 61.8 0 0126.57-44.52 29.52 29.52 0 0129.48-2.22 82.16 82.16 0 008.28 3.32 234.66 234.66 0 0186.78 54.37l-43.47 78.83z"/>
                             <path className="cls-17"

@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from "next/link";
 import {Breathing, Image} from "react-shimmer";
-import {HiStatusOnline} from "react-icons/hi";
 
 
 const Card = (data) => {
@@ -31,7 +30,7 @@ const Card = (data) => {
                     <div className={`absolute ${
                         type === "Manga" ? "bg-flag-manga" : type === "Manhwa" ? "bg-flag-manhwa" : type === "Manhua" ? "bg-flag-manhua" : "bg-flag-indo"
                     } w-6 h-4 top-2 right-2 shadow-md shadow-black/50`}/>
-                    <span className={`absolute top-0 left-0 px-2 py-1 ${data.content.status === "on-going" ? "bg-green-500" : "bg-red-500"} rounded-br-lg text-sm font-bold shadow-lg`}>{data.content.status === "on-going" ? "UP" : "END"}</span>
+                    <span className={`absolute top-0 left-0 px-2 py-1 ${data.content.status === "on-going" ? "bg-green-600" : "bg-red-600"} rounded-br-lg text-sm font-bold shadow-lg`}>{data.content.status === "on-going" ? "UP" : "END"}</span>
                 </div>
                 <header  className="h-14 items-center justify-between leading-tight p-1 md:p-2">
                     <span className='text-md font-bold line-clamp-2 text-center hover:from-cyan-600 hover:to-white font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-cyan-500 to-pink-500'>{data.content.title}</span>

@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import Layout from '../components/Layout'
+import Layout from "../components/Layout";
 import {useRouter} from "next/router";
 import {useEffect, useState} from "react";
 import {motion, AnimatePresence} from "framer-motion";
@@ -28,12 +28,18 @@ function Loading () {
     )
 }
 export default function App({ Component, pageProps }) {
+    const router = useRouter()
   return (
       <>
       {/*<Loading/>*/}
-          <AnimatePresence exitBeforeEnter>
-              <motion.div>
-                  <Loading/>
+          <AnimatePresence initial={false} mode={"wait"}>
+              <motion.div
+                  key={router.route}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+              >
+                  {/*<Loading/>*/}
                       <Layout>
                           <Component {...pageProps} />
                       </Layout>

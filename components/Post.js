@@ -7,14 +7,12 @@ import Related from "./Related";
 import {DiscussionEmbed} from "disqus-react";
 import TimeAgo from 'javascript-time-ago'
 import id from "javascript-time-ago/locale/id"
-import swapimg from "./../public/swap_vert.svg"
-
-TimeAgo.addDefaultLocale(id)
-const timeAgo = new TimeAgo("id_ID")
 
 const Post = ({data}) => {
     const router = useRouter();
     const path = router.asPath
+    TimeAgo.addDefaultLocale(id)
+    const timeAgo = new TimeAgo("id_ID")
 
     const jsonSchema = {
         "@context": "https://schema.org",
