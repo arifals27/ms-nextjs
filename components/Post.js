@@ -64,7 +64,7 @@ const Post = ({data}) => {
     }
     const errorFall = (a) => {
         return (
-            <Image alt="gambar error" src={`https://komikuwu.com/wp-content/themes/madara-child-mk/images/default-poster.png`}
+            <Image alt="gambar error" src={`/default-poster.png`}
                    fallback={<Breathing width={320} height={426}/>}
                    fadeIn={true} NativeImgProps={{className: "w-80 object-cover rounded-xl"}}
             />
@@ -72,7 +72,7 @@ const Post = ({data}) => {
     }
     const errorThumb = () => {
         return (
-            <Image alt={"gambar error"} src={`https://i0.wp.com/komikuwu.com/wp-content/themes/madara-child-mk/images/default-poster.png?resize=120,80`}
+            <Image alt={"gambar error"} src={`/default-poster.png`}
                    fallback={<Breathing width={120} height={80}/>}
                    fadeIn={true} NativeImgProps={{className: "fadein rounded-l-xl"}}
             />
