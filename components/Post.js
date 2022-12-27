@@ -70,7 +70,7 @@ const Post = ({data}) => {
     }
     const errorThumb = () => {
         return (
-            <Image alt={"gambar error"} src={`/default-poster.png`}
+            <Image alt={"gambar error"} src={`/no-thumb.png`}
                    fallback={<Breathing width={120} height={80}/>}
                    fadeIn={true} NativeImgProps={{className: "fadein rounded-l-xl"}}
             />
