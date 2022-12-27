@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import {useRouter} from "next/router";
 import {useEffect, useState} from "react";
 import {motion, AnimatePresence} from "framer-motion";
