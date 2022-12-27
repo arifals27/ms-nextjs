@@ -7,7 +7,7 @@ import {HiStatusOnline} from "react-icons/hi";
 const Card = (data) => {
     const errorFall = (a) => {
         return (
-            <Image alt={data.content.title} src={`https://komikuwu.com/wp-content/themes/madara-child-mk/images/default-poster.png`} width="214" height="315"
+            <Image alt={data.content.title} src={`/default-poster.png`} width="214" height="315"
                    fallback={<Breathing width={320} height={426} className={'absolute w-full h-full top-0 left-0 bottom-0 right-0'}/>}
                    fadeIn={true} NativeImgProps={{className: "w-80 object-cover rounded-t-lg absolute w-full h-full top-0 left-0 bottom-0 right-0"}}
             />
