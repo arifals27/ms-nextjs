@@ -29,7 +29,7 @@ function generateIndexSitemap(posts) {
                 <loc>${process.env.NEXT_PUBLIC_SITE}sitemap/manga-${f+1}.xml</loc>
             </sitemap>
             `
-        })
+        }).join('')
     }
     ${
 
@@ -39,7 +39,7 @@ function generateIndexSitemap(posts) {
                 <loc>${process.env.NEXT_PUBLIC_SITE}sitemap/chapter-${f+1}.xml</loc>
             </sitemap>
             `
-        })
+        }).join('')
     }
    </sitemapindex>
  `;
