@@ -29,7 +29,7 @@ function generateIndexSitemap(posts) {
             return `
             <sitemap>
                 <loc>${process.env.NEXT_PUBLIC_SITE}sitemap/manga-${f+1}.xml</loc>
-                <changefreq>monthly</changefreq>
+                <changefreq>weekly</changefreq>
                 <priority>0.8</priority>
             </sitemap>
             `
