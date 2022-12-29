@@ -10,6 +10,8 @@ function generateSiteMap(posts) {
        <url>
            <loc>${link.link.replace(`${process.env.API_URL}/`, process.env.NEXT_PUBLIC_SITE)}</loc>
            <lastmod>${link.date}</lastmod>
+           <changefreq>monthly</changefreq>
+           <priority>0.8</priority>
        </url>
      `;
         })
@@ -27,6 +29,8 @@ function generateIndexSitemap(posts) {
             return `
             <sitemap>
                 <loc>${process.env.NEXT_PUBLIC_SITE}sitemap/manga-${f+1}.xml</loc>
+                <changefreq>monthly</changefreq>
+                <priority>0.8</priority>
             </sitemap>
             `
         }).join('')
@@ -37,6 +41,8 @@ function generateIndexSitemap(posts) {
             return `
             <sitemap>
                 <loc>${process.env.NEXT_PUBLIC_SITE}sitemap/chapter-${f+1}.xml</loc>
+                <changefreq>monthly</changefreq>
+                <priority>0.8</priority>
             </sitemap>
             `
         }).join('')
